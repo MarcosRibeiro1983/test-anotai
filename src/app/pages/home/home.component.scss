@@ -1,0 +1,20 @@
+.search-section {
+    display: flex;
+    justify-content: center;
+}
+  
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 6;
+}
+
+@media (max-width: 720px) {
+
+    .card-section {
+        display: block;
+        transition: all 0.15s ease-in-out;
+    }
+}
+  

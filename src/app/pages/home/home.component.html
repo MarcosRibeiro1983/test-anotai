@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="search-section">
+       <app-input-search (onSearch)="fetchByName($event)" ></app-input-search>
+    </div>
+
+    <section class="card-section" *ngIf="cards && cards.length > 0;">
+        <app-card *ngFor="let item of cards; let i = index" [card]="item" (onChange)="delete(i, $event)"></app-card>
+    </section>
+</div>
+
