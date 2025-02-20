@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "projeto-anotai": {
+    "projeto-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/projeto-anotai",
+            "outputPath": "dist/projeto-test",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "projeto-anotai:build:production"
+              "buildTarget": "projeto-test:build:production"
             },
             "development": {
-              "buildTarget": "projeto-anotai:build:development"
+              "buildTarget": "projeto-test:build:development"
             }
           },
           "defaultConfiguration": "development"
